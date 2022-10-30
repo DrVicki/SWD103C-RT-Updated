@@ -13,17 +13,17 @@ We will use the Developer Tools of web browsers while debugging JavaScript code.
 
 There are several tools you might consider so you could always choose any of them. No matter what tools you choose, you’ll follow a similar process to learn the lessons.
 
-## 1.1 Install NodeJS 
+## Install NodeJS 
 
 Go to this website https://nodejs.org/en/download and download the latest LTS version of NodeJS; then install it onto your computer.
 
-## 1.2 Install a Code Editor 
+## Install a Code Editor 
 
 In these lessons, we’ll use Visual Studio Code (shortened to VS Code) as the code editor. 
 
 - You can download this free at https://code.visualstudio.com/download 
 
-### 1.2.1 Install Essential Extensions 
+### Install Essential Extensions 
 
 VS Code supports adding extensions which help us code faster and easier. 
 
@@ -57,7 +57,7 @@ To install the extensions, just
 - select the extension that you want and click its Install button.
 ![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-2.png)
 
-### 1.2.2 Install Live Server 
+### Install Live Server 
 
 Live Server helps us launch a local development server with a live reload feature for static or dynamic web pages. 
 
@@ -76,7 +76,7 @@ How to run an HTML file with the Live Server?
 - After doing the above steps, your HTML file will be loaded into a live server and available at this address:
 - http://127.0.0.1:5500/
 
-### 1.2.3 Setting Default Formatter 
+### Setting Default Formatter 
 
 We should configure the Default Formatter to use the “Prettier - Code formatter” extension. Please follow these steps to turn it on:     
 
@@ -86,9 +86,9 @@ We should configure the Default Formatter to use the “Prettier - Code formatte
 
 ![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-4.png)
 
-### 1.2.4   Enable Formatting Code on Save 
+### Enable Formatting Code on Save 
 
-We should enable the “Format on Save” feature to have best readable code. Please follow these steps to turn it on:     
+We should enable the “Format on Save” feature to have best readable code. Please follow these steps to turn it on:   
 
 - Go to the menu and select: File > Preferences > Settings     
 - Type “format on save” into the Search Box     
@@ -96,7 +96,7 @@ We should enable the “Format on Save” feature to have best readable code. Pl
 
 ![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-5.png)
 
-### 1.2.5 Disable Compact Folders 
+### Disable Compact Folders 
 
 VS Code renders folders in its explorer in a compact form. In such a form, single child folders will be compressed in a combined tree element. 
 
@@ -108,7 +108,7 @@ It’s only useful for Java package structures. Therefore, we should disable “
 
 ![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-6.png)
 
-### 1.2.6 Enable Word Wrap 
+### Enable Word Wrap 
 
 To get rid of the horizontal scroll bar, we could turn on the “Word Wrap” feature by following these steps:     
 
@@ -118,13 +118,13 @@ To get rid of the horizontal scroll bar, we could turn on the “Word Wrap” fe
 ![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-7.png)
 
 
-## 1.3 Using a Web Browser 
+## Using a Web Browser 
 
 We will use Google Chrome as a tool to run and debug our React app since it is the most popular browser. 
 
 -It also includes amazing Developer Tools that will be described below. 
 
-### 1.3.1   Using Developer Tools of The Browser 
+### Using Developer Tools of The Browser 
 
 The Developer Tools are usually presented as a tabbed group of panes at the right or bottom of the web browser window. 
 
@@ -146,7 +146,7 @@ We can undock it into a separate window or only change the dock side following t
 ![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-10.png)
 
 
-### 1.3.2 Using Console Tool 
+### Using Console Tool 
 
 If the Console tool wasn’t selected, you might have to select the Console tab. We can check the values of variables or try JavaScript code directly in the Console tool as below. 
 
@@ -154,7 +154,7 @@ If the Console tool wasn’t selected, you might have to select the Console tab.
 
 The Console panel is the one that shows the messages you output with console.log() and any unhandled errors.
 
-### 1.3.3 Strict Mode of React 
+### Strict Mode of React 
 
 The Strict Mode of React version 18 will double rendering so it can catch errors that might occur. 
 
