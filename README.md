@@ -210,5 +210,185 @@ You created this folder in your Front-End Foundations course. If you do not have
 
 Great! Now you have a folder to house all of the projects for this course. Remember to create projects when asked and make sure they live in this folder!
 
+## Rendering with React
+
+A React Element is the smallest building block in React. The virtual DOM is a tree structure comprised of a ```root``` element that contains other elements. This tree of virtual DOM elements is immutable, meaning it can't be changed after creation. This allows React to keep previous versions of the virtual DOM to compare against when updates are made to help ensure only the minimal amount of work is performed.
+
+### Project Structure
+
+Open up the ```ReactL01``` project you previously downloaded. You will be following along in this lesson and adding code to this project. Under the ```public``` folder, you should see an ```index.html``` file. After opening the file, you should see the following:
+
+```index.html``` file:
+
+```
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script src="bundle.js"></script>
+    </body>
+</html>
+```
+Above, you have a basic HTML page structure. Inside the ```<body>``` tag, there is a ```<div>``` tag with an ```id``` of ```root```. You will be working with this ```<div>``` tag shortly. Also within the ```<body>``` tag, there is a ```script``` tag. This project has already been configured to use webpack to bundle all your project's files and dependencies into a single ```bundle.js``` file. The script tag points to the ```bundle.js``` file. When you run ```npm start``` from the project directory, the webpack process is started, and it monitors any changes to your files and rebuilds the ```bundle.js``` file for you. This means you can add many JavaScript files to your ```src``` directory and they will all be available in your final page. However, you won't be directly working in the ```bundle.js``` file but in the ```index.js``` file within the ```src``` folder in your project.
+
+Next, open up the ```index.js``` file located within the ```src``` folder. As you can see, there is an ```alert``` in that file along with nothing else. This is there to show that the project is up and running. Go ahead and remove that line of code so the ```index.js``` file is now empty.
+
+To start using React, you need to make sure it has been imported into the ```index.js``` file, which is the file you will be writing within. This is an essential piece of React because without importing it, it will not work.
+
+Go ahead and add the following to the ```index.js``` file.
+
+```src/index.js``` file:
+```
+import React from 'react';
+```
+Great! Now your JS file is now ready for some React!
+
+## Rendering with React - Continued
+
+## Rendering an Element into the DOM
+
+Let’s say there is a ```<div>``` somewhere in your HTML file:
+```
+<div id="root"></div>
+```
+We call this a “```root```” DOM node because everything inside it will be managed by React DOM.
+
+Applications built with just React usually have a single root DOM node. If you are integrating React into an existing app, you may have as many isolated root DOM nodes as you like.
+
+To render a React element, first pass the DOM element to ```ReactDOM.createRoot()```, then pass the React element to ```root.render()```:
+
+
+```
+const root = ReactDOM.createRoot(
+  document.getElementById('root')
+);
+const element = <h1>Hello, world</h1>;
+root.render(element);
+```
+
+### Create Element
+
+The ```React.createElement()``` method is very useful because it creates new elements for you on the page rather than having to add the elements into your ```index.html``` file.
+
+Below, the ```React.createElement()``` method takes in three parameters: type, props, and children.
+
+ - **type**: the type of the HTML element (```h1```,```p```,```button```).
+ - **props**: properties of the ```object({style:{size:10px}}``` or ```Eventhandlers```, ```classNames```,etc).
+ - **children**: anything to be displayed on the screen.
+
+```
+import React from 'react';
+
+React.createElement('h1', {}, 'Hello World!');
+```
+
+In the above ```createElement()``` method, the type is the HTML tag you want to create, in this case, an ```h1``` tag. Props (stands for properties) are objects that get added to the element. They can be used to add ```class``` and ```id``` names or other attributes to the element created. Later on in this module, props will serve a larger purpose. For the current example, this object is empty to visualize creating a basic element. Later on, you will see it being used. Children are zero or more elements nested inside the element. In this case, you are providing some plain text as a child of the ```h1``` tag.
+
+Great! If you add the new ```createElement()``` method to your code, nothing will happen. That is because you are missing a piece to make this code work.
+
+### ReactDOM (React v.18)
+
+Install React 18 and React DOM from npm or yarn, like this:
+```
+npm install react react-dom
+```
+
+Then, you'll want to use ```createRoot``` instead of ```render```.
+
+Here's what it would look like in **React 17**:
+
+```index.js``` file:
+
+```
+import ReactDOM from 'react-dom';
+import App from 'App';
+
+const container = document.getElementById('app');
+
+ReactDOM.**render**(<App />, container);
+```
+
+And here's what it looks like in **React 18**:
+
+```index.js``` file:
+
+```
+import React from 'react;
+import ReactDOM from 'react-dom';
+import App from 'App';
+import { createRoot } from 'react-dom/client';
+
+const container = document.getElementById('app');
+
+// create a root
+const root = ReactDOM.**createRoot**(container);
+
+//render app to root
+root.render(<App tab="home" />)
+```
+
+In your ```index.js```, update ```ReactDOM.render``` to ```ReactDOM.createRoot``` to create a root, and render your app using root.
+
+
+
+```createElement``` builds a virtual DOM element, but to get React to update the page based on it, you must use the ```createRoot``` function from the ```react-dom``` package. To start, you need to import the ```ReactDOM``` package as you did with React itself. Add the import statement so your code now looks like below:
+
+```src/index.js``` file:
+
+```
+import React from 'react;
+import ReactDOM from 'react-dom';
+import App from 'App';
+import { createRoot } from 'react-dom/client';
+```
+
+```React.createElement('h1', {}, 'Hello World!')```;
+
+Next, you need to add the ```createRoot()``` function that is included in the ReactDOM package. ```createRoot()``` has two parameters. The first parameter is what you would like to render on the page. In this case, you want to render the ('```h1```', {}, '```Hello World```!');  you already have in your HTML code. The second parameter is where you would want to render. If you remember, there is a ```<div>``` in the HTML file with an ```id``` of ```root```. This is where you are going to render your newly created ```h1``` element by using ```document.getElementById('root')```.
+
+Create the ```ReactDOM.createRoot()``` method and move the ```document.getElementById('root'). 
+ 
+Your ```index.js``` should now look like below:
+
+```src/index.js``` file:
+
+ ```
+import React from 'react'
+import ReactDOM from 'react-dom';
+import App from './App';
+
+ 
+const container = document.getElementById('app');
+
+// create a root
+const root = ReactDOM.createRoot(container);
+
+//render app to root
+
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>
+);
+```
+ 
+ 
+
+
+
+ 
+ 
+ 
+Caution!
+
+The above code tells React to find an element on the page with an id of root and replace its contents with your newly created element.
+
+Try It!
+Add the above code to your ```index.js``` file and navigate to ```localhost:8080```. The page will automatically update and you should now see "```Hello World!```".
+
 
  
