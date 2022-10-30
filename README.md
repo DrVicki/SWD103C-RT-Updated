@@ -1,4 +1,4 @@
-# SWD103C-RT: Lesson 1 Page 5
+# SWD103C-RT: Lesson 1 Page 5 - 7
 
 ## Set Up a React18 Development Environment 
 
