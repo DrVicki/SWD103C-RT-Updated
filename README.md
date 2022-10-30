@@ -48,15 +48,14 @@ After installing the editor, let’s add these essential extensions:
 
 This is a screenshot of the above extensions for your reference when searching them.
 
-IMAGE1
+![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-1.png)
 
 To install the extensions, just 
 
 - click on the Extensions icon (as the below picture); 
 - then type a name into the Search Box; 
 - select the extension that you want and click its Install button.
-
-UMAGE 2
+![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-2.png)
 
 ### 1.2.2 Install Live Server 
 
@@ -68,7 +67,7 @@ To install the extension,
 - then type “Live Server” into the Search Box; 
 - select the extension in the below picture and click its Install button. 
 
-IMAGE3
+![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-3.png)
 
 How to run an HTML file with the Live Server?     
 
@@ -85,7 +84,7 @@ We should configure the Default Formatter to use the “Prettier - Code formatte
 - Type “default format” into the Search Box    
 -  Then select the “Prettier - Code formatter” option as the below picture.
 
-IMAGE 4
+![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-4.png)
 
 ### 1.2.4   Enable Formatting Code on Save 
 
@@ -95,7 +94,7 @@ We should enable the “Format on Save” feature to have best readable code. Pl
 - Type “format on save” into the Search Box     
 - Then check the checkbox of “Editor: Format On Save” as the below picture.
 
-IMAGE 5
+![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-5.png)
 
 ### 1.2.5 Disable Compact Folders 
 
@@ -107,7 +106,7 @@ It’s only useful for Java package structures. Therefore, we should disable “
 - Type “compact folders” into the Search Box 
 - Then uncheck the checkbox of “Explorer: Compact Folders” as the below picture.
 
-IMAFE 6
+![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-6.png)
 
 ### 1.2.6 Enable Word Wrap 
 
@@ -116,8 +115,7 @@ To get rid of the horizontal scroll bar, we could turn on the “Word Wrap” fe
 - Go to the menu and select: File > Preferences > Settings     
 - Type “word wrap” into the Search Box     
 - Then select option “on” of “Editor: Word Wrap” as the below picture.
-
-IMAGE 7
+![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-7.png)
 
 
 ## 1.3 Using a Web Browser 
@@ -134,25 +132,25 @@ To open the developer tools in Google Chrome,
 
 - Open the Chrome Menu in the upper-right-hand corner of the browser window and select More Tools > Developer tools. You can also use Shift + CTRL + J (on Windows/Linux), or Option + ⌘ + J (on macOS) to open the tools.
 
-IMAGE 8
+![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-8.png)
 
 The Developer Tools will either open up in a new window or within the Chrome window as below picture.
 
-UMAGE 9
+![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-9.png)
 
 We can undock it into a separate window or only change the dock side following these steps: ● 
 
 - Click the “Customize and control Dev Tools” button in the upper-right-hand corner.    
 - Then select the dock side that you want as in the below picture.
 
-IMAGE 10
+![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-10.png)
 
 
 ### 1.3.2 Using Console Tool 
 
 If the Console tool wasn’t selected, you might have to select the Console tab. We can check the values of variables or try JavaScript code directly in the Console tool as below. 
 
-IMAGE 11
+![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-11.png)
 
 The Console panel is the one that shows the messages you output with console.log() and any unhandled errors.
 
@@ -162,15 +160,15 @@ The Strict Mode of React version 18 will double rendering so it can catch errors
 
 - As a result, our debugging logs will be duplicated and this causes confusion to developers. - But don’t worry! Strict mode checks are run in development mode only; they do not impact the production build. 
 
-IMAGE 12
+![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-12.png)
 
 To bypass this confusing behavior, we install an extension called “React Developer Tools”.
 
-IMAGE 13
+![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-13.png)
 
 After installing the extension, we can see the grayed-out characters that came from the React Strict Mode.
 
-IMAGE 14
+![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-14.png)
 
 
 
