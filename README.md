@@ -1,6 +1,6 @@
-# SWD103C-RT
+# SWD103C-RT: Lesson 1 Page 5
 
-## Set Up a Development Environment 
+## Set Up a React18 Development Environment 
 
 The first step in setting up your development environment is choosing your code editor. 
 
@@ -171,7 +171,44 @@ After installing the extension, we can see the grayed-out characters that came f
 ![](https://github.com/DrVicki/set-up-react-dev-environment/blob/main/react-dev-env-images/image-14.png)
 
 
+## React Set Up
 
+Now that you have a general idea of what React is and how it works, the next step is to install a starter project provided for you. You will be working in this project throughout the next several lessons, so it is important to not skip this page.
+
+For this course, create a folder in your SoftwareDevelopment folder named ```FEFReact```. Please add all projects to this folder to help keep yourself organized. You will be creating projects to practice the code from the lesson and projects for your Hands-On solutions. As you move through this course, you will be asked to create projects with specific names, so please add these projects into the ```FEFReact``` folder. 
+
+To create this folder, follow the steps below:
+
+ 1. Open up your command prompt/terminal.
+ 2. Run the following to navigate to your Desktop
+ ```
+ cd Desktop
+ ```
+ 3. Next, navigate to the ```SoftwareDevelopment``` directory in your terminal.
+```
+cd SoftwareDevelopment
+```
+
+You created this folder in your Front-End Foundations course. If you do not have this folder follow the directions below:
+
+ 1. Create a root folder on your desktop and name it ```SoftwareDevelopment```.
+ ```
+ mkdir SoftwareDevelopment
+ ```
+ 2. Next, navigate to the ```SoftwareDevelopment``` directory in your terminal.
+```
+ cd SoftwareDevelopment
+ ```
+ 3. Create a new folder within your ```SoftwareDevelopment``` folder and name it ```FEFReact```. (This folder will hold all your coursework for this course)
+```
+ mkdir FEFReact
+ ```
+ 4. Then, navigate to the ```FEFReact``` directory in your terminal.
+```
+ cd FEFReact
+ ```
+
+Great! Now you have a folder to house all of the projects for this course. Remember to create projects when asked and make sure they live in this folder!
 
 
  
