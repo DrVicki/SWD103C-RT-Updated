@@ -109,8 +109,71 @@ It’s only useful for Java package structures. Therefore, we should disable “
 
 IMAFE 6
 
-### 1.2.7 Enable Word Wrap 
+### 1.2.6 Enable Word Wrap 
 
-To get rid of the horizontal scroll bar, we could turn on the “Word Wrap” feature by following these steps:     Go to the menu and select: File > Preferences > Settings ●    Type “word wrap” into the Search Box ●    Then select option “on” of “Editor: Word Wrap” as the below picture.
+To get rid of the horizontal scroll bar, we could turn on the “Word Wrap” feature by following these steps:     
+
+- Go to the menu and select: File > Preferences > Settings     
+- Type “word wrap” into the Search Box     
+- Then select option “on” of “Editor: Word Wrap” as the below picture.
+
+IMAGE 7
+
+
+## 1.3 Using a Web Browser 
+
+We will use Google Chrome as a tool to run and debug our React app since it is the most popular browser. 
+
+-It also includes amazing Developer Tools that will be described below. 
+
+### 1.3.1   Using Developer Tools of The Browser 
+
+The Developer Tools are usually presented as a tabbed group of panes at the right or bottom of the web browser window. 
+
+To open the developer tools in Google Chrome, 
+
+- Open the Chrome Menu in the upper-right-hand corner of the browser window and select More Tools > Developer tools. You can also use Shift + CTRL + J (on Windows/Linux), or Option + ⌘ + J (on macOS) to open the tools.
+
+IMAGE 8
+
+The Developer Tools will either open up in a new window or within the Chrome window as below picture.
+
+UMAGE 9
+
+We can undock it into a separate window or only change the dock side following these steps: ● 
+
+- Click the “Customize and control Dev Tools” button in the upper-right-hand corner.    
+- Then select the dock side that you want as in the below picture.
+
+IMAGE 10
+
+
+### 1.3.2 Using Console Tool 
+
+If the Console tool wasn’t selected, you might have to select the Console tab. We can check the values of variables or try JavaScript code directly in the Console tool as below. 
+
+IMAGE 11
+
+The Console panel is the one that shows the messages you output with console.log() and any unhandled errors.
+
+### 1.3.3 Strict Mode of React 
+
+The Strict Mode of React version 18 will double rendering so it can catch errors that might occur. 
+
+- As a result, our debugging logs will be duplicated and this causes confusion to developers. - But don’t worry! Strict mode checks are run in development mode only; they do not impact the production build. 
+
+IMAGE 12
+
+To bypass this confusing behavior, we install an extension called “React Developer Tools”.
+
+IMAGE 13
+
+After installing the extension, we can see the grayed-out characters that came from the React Strict Mode.
+
+IMAGE 14
+
+
+
+
 
  
