@@ -308,7 +308,7 @@ import App from 'App';
 
 const container = document.getElementById('app');
 
-ReactDOM.**render**(<App />, container);
+ReactDOM.render(<App />, container);
 ```
 
 And here's what it looks like in **React 18**:
@@ -324,7 +324,7 @@ import { createRoot } from 'react-dom/client';
 const container = document.getElementById('app');
 
 // create a root
-const root = ReactDOM.**createRoot**(container);
+const root = ReactDOM.createRoot(container);
 
 //render app to root
 root.render(<App tab="home" />)
@@ -360,6 +360,7 @@ import React from 'react'
 import ReactDOM from 'react-dom';
 import App from './App';
 
+React.createElement('h1', {}, 'Hello World!');
  
 const container = document.getElementById('app');
 
